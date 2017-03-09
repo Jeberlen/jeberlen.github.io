@@ -1,0 +1,48 @@
+/* Author Joacim Eberlen */
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: #031424;
+    border-style: solid;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content p,
+.main-content a{
+    color: #F4F4F4;
+}
+
+.main-content h1{
+    font-size: 20px;
+}
+
+.main-content h2{
+    font-size: 18px;
+}
+
+.main-content p{
+    font-size: 14px;
+}
+
+.main-content a{
+    font-size: 14px;
+}
+
+.image{
+    margin: 10px;
+}
+
+.image.is-small{
+    width: 128px;
+    height: 128px;
+}
+
+.image.is-large{
+    width: 256px;
+    height: 256px;
+}
