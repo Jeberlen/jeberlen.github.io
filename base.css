@@ -4,10 +4,6 @@
     color: #f7d305;
   }
 
-  .text-content {
-    color: #ffef96;
-  }
-
   .line {
     background-color: #f7d305;
   }
@@ -15,6 +11,10 @@
   .menu {
     background-color: #f7d305;
     color: #333;
+  }
+
+  .separator {
+    border-color: #f7d305;
   }
 }
 
@@ -27,6 +27,9 @@
   .line {
     background-color: #333;
   }
+  .menu {
+    background-color: white;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -34,8 +37,30 @@
     padding: 40px;
   }
 
+  .separator {
+    border: 5px solid;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    animation: separator-on-load 0.5s ease-in-out;
+  }
+
+  @keyframes separator-on-load {
+    0% {
+      margin-right: 100%;
+    }
+    100% {
+      margin-right: 0;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 0px;
+  }
+
   .name-text {
     font-size: 140px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
   }
 
   .text-field {
