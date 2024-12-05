@@ -1,0 +1,63 @@
+<head>
+  <link rel="stylesheet" href="base.css" />
+  <script>
+    let menuOpen = false;
+
+    function onOpenMenu(element) {
+      element.className = menuOpen ? "menu-button close" : "menu-button open";
+
+      const sideMenu = document.getElementById("side-menu");
+      sideMenu.className = menuOpen
+        ? "menu animate-menu-out "
+        : "menu animate-menu-in";
+
+      menuOpen = !menuOpen;
+    }
+  </script>
+</head>
+<header>
+  <div class="menu-button" onclick="onOpenMenu(this)">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</header>
+
+<div class="content-container">
+  <div id="side-menu" class="menu">menu</div>
+  <div class="name-container">
+    <h1 class="name-text">
+      Joacim <br />
+      Eberlen
+    </h1>
+  </div>
+  <section class="intro-section">
+    <div class="text-field">
+      <h2>Biography</h2>
+      <div class="text-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
+          nisl facilisis hendrerit blandit. Sed purus mi, imperdiet eget felis
+          non, consequat placerat urna. Nunc magna dolor, malesuada sed rhoncus
+          iaculis, mattis non ante. Duis eget porttitor dolor. In odio libero,
+          dictum nec bibendum eget, cursus vitae tellus. Nullam fermentum ligula
+          eget erat tincidunt, id finibus mi tincidunt. Fusce lobortis felis
+          quis tellus molestie congue quis ac libero. In hac habitasse platea
+          dictumst. Donec at suscipit risus, ut tristique sapien. Nulla velit
+          orci, laoreet ac orci et, mollis egestas est. Duis ac molestie ex.
+          Suspendisse sed quam vel nisl sodales euismod vitae a eros.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="experience-section">
+    <div class="text-field">
+      <h2>Experience</h2>
+      <div class="text-content">
+        <h3>Volvo cars</h3>
+        <h4>January 2021 - present</h4>
+        <p>Working with things and stuff.</p>
+      </div>
+    </div>
+  </section>
+</div>
