@@ -1,5 +1,11 @@
 <head>
   <link rel="stylesheet" href="base.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script
+    src="https://kit.fontawesome.com/3181a0e0a2.js"
+    crossorigin="anonymous"
+  ></script>
+
   <script>
     let menuOpen = false;
 
@@ -24,43 +30,86 @@
 </header>
 
 <div class="content-container">
-  <div id="side-menu" class="menu">menu</div>
-  <div class="name-container">
-    <h1 class="name-text">
-      Joacim <br />
-      Eberlen
-    </h1>
+  <div id="side-menu" class="menu">
+    <a
+      class="menu__section__link"
+      href="mailto:joacim.eberlen@visionite.se?Subject=Contact%20Application"
+    >
+      <div class="menu__section">
+        <i class="fa-regular fa-envelope menu__section__icon"></i><br />
+        Contact me
+      </div>
+    </a>
+    <a
+      class="menu__section__link"
+      href="https://www.linkedin.com/in/jeberlen/"
+      target="_blank"
+    >
+      <div class="menu__section">
+        <i class="fa-brands fa-linkedin menu__section__icon"></i><br />
+        LinkedIn
+      </div>
+    </a>
+    <a
+      class="menu__section__link"
+      href="https://visionite.se/kontakt/#goteborg"
+    >
+      <div class="menu__section">
+        <i class="fa-solid fa-people-arrows menu__section__icon"></i> <br />
+        Consultancy
+      </div>
+    </a>
   </div>
-  <section class="intro-section">
-    <div class="text-field">
-      <h2 class="section-header">Biography</h2>
-      <hr class="separator" />
-      <div class="text-content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-          nisl facilisis hendrerit blandit. Sed purus mi, imperdiet eget felis
-          non, consequat placerat urna. Nunc magna dolor, malesuada sed rhoncus
-          iaculis, mattis non ante. Duis eget porttitor dolor. In odio libero,
-          dictum nec bibendum eget, cursus vitae tellus. Nullam fermentum ligula
-          eget erat tincidunt, id finibus mi tincidunt. Fusce lobortis felis
-          quis tellus molestie congue quis ac libero. In hac habitasse platea
-          dictumst. Donec at suscipit risus, ut tristique sapien. Nulla velit
-          orci, laoreet ac orci et, mollis egestas est. Duis ac molestie ex.
-          Suspendisse sed quam vel nisl sodales euismod vitae a eros.
-        </p>
-      </div>
+  <div class="name-container">
+    <div class="name-container__photo">
+      <img
+        class="name-container__photo__img"
+        src="public/photo.jpg"
+        alt="Profile Picture"
+      />
     </div>
-  </section>
-  <section class="experience-section">
-    <div class="text-field">
-      <h2 class="section-header">Experience</h2>
-      <hr class="separator" />
+    <div class="name-text__container">
+      <h1 class="name-text">
+        Joacim <br />
+        Eberlen
+      </h1>
+    </div>
+  </div>
+  <div class="text-sections">
+    <section class="intro-section">
+      <div class="text-field">
+        <h2 class="section-header">Biography</h2>
+        <hr class="separator" />
+        <div class="text-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
+            nisl facilisis hendrerit blandit. Sed purus mi, imperdiet eget felis
+            non, consequat placerat urna. Nunc magna dolor, malesuada sed
+            rhoncus iaculis, mattis non ante. Duis eget porttitor dolor. In odio
+            libero, dictum nec bibendum eget.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="experience-section">
+      <div class="text-field">
+        <h2 class="section-header">Experience</h2>
+        <hr class="separator" />
 
-      <div class="text-content">
-        <h3>Volvo cars</h3>
-        <h4>January 2021 - present</h4>
-        <p>Working with things and stuff.</p>
+        <div class="text-content">
+          <h3>Volvo cars</h3>
+          <h4>January 2021 - present</h4>
+          <p>Working with things and stuff.</p>
+        </div>
       </div>
-    </div>
-  </section>
+
+      <div class="text-field">
+        <div class="text-content">
+          <h3>Volvo cars</h3>
+          <h4>January 2021 - present</h4>
+          <p>Working with things and stuff.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
