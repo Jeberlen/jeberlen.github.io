@@ -14,195 +14,202 @@
 
       const sideMenu = document.getElementById("side-menu");
       sideMenu.className = menuOpen
-        ? "menu animate-menu-out "
+        ? "menu animate-menu-out"
         : "menu animate-menu-in";
 
       menuOpen = !menuOpen;
     }
   </script>
 </head>
-<header>
-  <div class="menu-button" onclick="onOpenMenu(this)">
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-  </div>
-</header>
-
-<div class="content-container">
-  <div id="side-menu" class="menu">
-    <a
-      class="menu__section__link"
-      href="mailto:joacim.eberlen@visionite.se?Subject=Contact%20Application"
-    >
-      <div class="menu__section">
-        <i class="fa-regular fa-envelope menu__section__icon"></i><br />
-        Contact me
-      </div>
-    </a>
-    <a
-      class="menu__section__link"
-      href="https://www.linkedin.com/in/jeberlen/"
-      target="_blank"
-    >
-      <div class="menu__section">
-        <i class="fa-brands fa-linkedin menu__section__icon"></i><br />
-        LinkedIn
-      </div>
-    </a>
-    <a
-      class="menu__section__link"
-      href="https://visionite.se/kontakt/#goteborg"
-    >
-      <div class="menu__section">
-        <i class="fa-solid fa-people-arrows menu__section__icon"></i> <br />
-        Consultancy
-      </div>
-    </a>
-  </div>
-  <div class="name-container">
-    <div class="name-container__photo">
-      <img
-        class="name-container__photo__img"
-        src="public/photo.jpg"
-        alt="Profile Picture"
-      />
+<body>
+  <header>
+    <div class="menu-button" onclick="onOpenMenu(this)">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
     </div>
-    <div class="name-text__container">
-      <h1 class="name-text">
-        Joacim <br />
-        Eberlen
-      </h1>
+  </header>
+
+  <div class="content-container">
+    <div id="side-menu" class="menu">
+      <a
+        class="menu__section__link"
+        href="mailto:joacim.eberlen@visionite.se?Subject=Contact%20Application"
+      >
+        <div class="menu__section">
+          <i class="fa-regular fa-envelope menu__section__icon"></i><br />
+          Contact me
+        </div>
+      </a>
+      <a
+        class="menu__section__link"
+        href="https://www.linkedin.com/in/jeberlen/"
+        target="_blank"
+      >
+        <div class="menu__section">
+          <i class="fa-brands fa-linkedin menu__section__icon"></i><br />
+          LinkedIn
+        </div>
+      </a>
+      <a
+        class="menu__section__link"
+        href="https://visionite.se/kontakt/#goteborg"
+      >
+        <div class="menu__section">
+          <i class="fa-solid fa-people-arrows menu__section__icon"></i> <br />
+          Consultancy
+        </div>
+      </a>
+    </div>
+    <div id="content-fields" class="content-fields">
+      <div class="name-container">
+        <div class="name-container__photo">
+          <img
+            class="name-container__photo__img"
+            src="public/photo.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="name-text__container">
+          <h1 class="name-text">
+            Joacim <br />
+            Eberlen
+          </h1>
+        </div>
+      </div>
+      <div class="text-sections">
+        <section class="intro-section">
+          <div class="text-field">
+            <h2 class="section-header">Biography</h2>
+            <hr class="separator" />
+            <div class="text-content">
+              <p>
+                I am a full-stack developer with a passion for building smooth,
+                secure, and good-looking systems!
+              </p>
+              <p>
+                35 years old, cat owner, and winner of "nicest colleague of the
+                year" at my consultancy company - which made me very glad!
+              </p>
+              <p>
+                I have coded since I was around 10 (a bit unsure) and I still
+                love to learn new things. I work for Visionite Gothenburg and if
+                you want to know more about me - please open the menu and make a
+                choice.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="experience-section">
+          <div class="text-field">
+            <h2 class="section-header">Experience</h2>
+            <hr class="separator" />
+            <div class="text-content">
+              <h3>Volvo Cars</h3>
+              <h4>January 2021 - present</h4>
+              <p>
+                I have worked on a multitude of systems for planning and using
+                test cars in the Volvo pilot plant.
+              </p>
+              <p>
+                Frontend: Angular, Blazor, React <br />
+                Backend: IBM zOS Mainframe, NodeJS, .NET <br />
+                Database: DB2, MongoDB, Azure Storage, SQL <br />
+                Other: Dynamics 365 <br />
+              </p>
+              <p>
+                During this project, I set up Kubernetes, designed
+                microservices, and worked in multiple great teams trying to
+                ensure quality for newly developed cars. If you have any
+                questions, please feel free to contact me.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-field">
+            <div class="text-content">
+              <h3>Iver AB</h3>
+              <h4>January 2021 - November 2021</h4>
+              <p>.NET - Angular - Kubernetes - Grafana</p>
+              <p>
+                During this time, I was part of building a new browser-based
+                ticket handling system as an easier interface for certain users.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-field">
+            <div class="text-content">
+              <h3>Scandinavian Airlines System - SAS</h3>
+              <h4>November 2019 - January 2021</h4>
+              <p>.NET - Python - Rave - Java - Ansible - Grafana</p>
+              <p>
+                I worked on designing and building new applications, mostly
+                using .NET, and maintaining an older planning system for flight
+                crew.
+              </p>
+            </div>
+          </div>
+          <div class="text-field">
+            <div class="text-content">
+              <h3>Entreprenad Akademin</h3>
+              <h4>May 2019 - November 2023</h4>
+              <p>Python - Next.js</p>
+              <p>
+                During this project, I was part of designing and implementing an
+                administration system for the education and certification of
+                construction workers in Sweden.
+              </p>
+              <p>
+                When this project started, it was a pioneer product focusing on
+                integrating ID06 and BankID into the application to make both
+                admin work and doing the courses easier for every stakeholder.
+              </p>
+              <p>
+                We also developed an AI chatbot with the capability to support
+                users with information about which certificates they needed or
+                simply how to find something in the platform.
+              </p>
+            </div>
+          </div>
+          <div class="text-field">
+            <div class="text-content">
+              <h3>Aptiv</h3>
+              <h4>June 2018 - November 2019</h4>
+              <p>
+                Android Platform - SELinux - Golang - C - C++ - Kotlin - Bash -
+                MAKE - Gerrit - Jenkins
+              </p>
+              <p>
+                Starting out as an intern, I built Android applications for use
+                in demonstrations of the company's product.
+              </p>
+              <p>
+                After some time, I switched to working on the Android Platform,
+                with work ranging from writing rules for SELinux to getting
+                Google Assistant to work before it was officially supported.
+              </p>
+            </div>
+          </div>
+          <div class="text-field">
+            <div class="text-content">
+              <h3>SSPA</h3>
+              <h4>March 2018 - June 2018</h4>
+              <p>Python - JavaScript - HTML - WebGL - CSS</p>
+              <p>
+                This project was a browser-based ship simulator. It rendered
+                maps and routes for ships based on data from the company's
+                simulator.
+              </p>
+              <p>
+                One of the uses for this software was to give a ship captain a
+                chance to simulate docking in a new port - and have the ability
+                to add a multitude of variables.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
-  <div class="text-sections">
-    <section class="intro-section">
-      <div class="text-field">
-        <h2 class="section-header">Biography</h2>
-        <hr class="separator" />
-        <div class="text-content">
-          <p>
-            I am a full-stack developer with passion for building smooth, secure
-            and good-looking systems!
-          </p>
-          <p>
-            35 years old, cat owner and winner of "nicest colleague of the year"
-            at my consultancy company - which made me very glad!
-          </p>
-          <p>
-            I have coded since I was around 10 (a bit unsure) and I still love
-            to learn new things. I work for Visionite Gothenburg and if you want
-            to know more about me - please open the menu and make choice.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="experience-section">
-      <div class="text-field">
-        <h2 class="section-header">Experience</h2>
-        <hr class="separator" />
-        <div class="text-content">
-          <h3>Volvo cars</h3>
-          <h4>January 2021 - present</h4>
-          <p>
-            I have worked on a multitude of systems for planning and using test
-            cars in the Volvo pilot plant.
-          </p>
-          <p>
-            Frontend: Angular, Blazor, React <br />
-            Backend: IBM zOS Mainframe, NodeJS, .NET <br />
-            Database: DB2, MongoDB, Azure Storage, SQL <br />
-            Other: Dynamics 365 <br />
-          </p>
-          <p>
-            During this project I set up kubernetes, designed micro-services and
-            worked in multiple great teams trying to ensure quality for newly
-            developed cars. If you have any questions, please feel free to
-            contact me.
-          </p>
-        </div>
-      </div>
-
-      <div class="text-field">
-        <div class="text-content">
-          <h3>Iver AB</h3>
-          <h4>January 2021 - November 2021</h4>
-          <p>.NET - Angular - Kubernetes - Grafana</p>
-          <p>
-            During this time I was part of builing a new browser based ticket
-            handling system as a easier inteface for certain users
-          </p>
-        </div>
-      </div>
-
-      <div class="text-field">
-        <div class="text-content">
-          <h3>Scandinavian Airlines System - SAS</h3>
-          <h4>November 2019 - January 2021</h4>
-          <p>.NET - Python - Rave - Java - Ansible - Grafana</p>
-          <p>
-            I worked with designing and building new applications, mostly using
-            .NET and maintaining an older planning system for flight crew.
-          </p>
-        </div>
-      </div>
-      <div class="text-field">
-        <div class="text-content">
-          <h3>Entreprenad Akademin</h3>
-          <h4>May 2019 - November 2023</h4>
-          <p>Python - NextJs</p>
-          <p>
-            During this project I was a part of designing and implementing an
-            administration system for education and certification of
-            construction workers in Sweden.
-          </p>
-          <p>
-            When this project was started it was a pioneer product focusing on
-            integration ID06 and BankId into the application to make both admin
-            work and doing the courses easier for every stakeholder.
-          </p>
-          <p>
-            We also developed an AI-chatbot with the capability to support users
-            with information about which certificates they needed or simply how
-            to find somethign in the platform.
-          </p>
-        </div>
-      </div>
-      <div class="text-field">
-        <div class="text-content">
-          <h3>Aptiv</h3>
-          <h4>June 2018 - November 2019</h4>
-          <p>
-            Android Platform - SELinux - Golang - C - C++ - Kotlin - bash - MAKE
-            - Gerrit - Jenkins
-          </p>
-          <p>
-            Starting out as an intern I built Android applications for use in
-            demonstrations of the companies product.
-          </p>
-          <p>
-            After some time I switched to working on the Android Platform, with
-            work ranging from writing rules for SELinux to getting Google
-            Assistant to work before it was officially supported.
-          </p>
-        </div>
-      </div>
-      <div class="text-field">
-        <div class="text-content">
-          <h3>SSPA</h3>
-          <h4>March 2018 - June 2018</h4>
-          <p>Python - Javascript - HTML - WebGL - CSS</p>
-          <p>
-            This project was an browser based Ship simulator. It rendered maps
-            and routes for ships based on data from the companys simulator.
-          </p>
-          <p>
-            One of the uses for this software was to give a ship captain a
-            chance to simulate docking in a new port - and have the ability to
-            add a multitude of variables.
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
+</body>

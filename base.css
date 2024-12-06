@@ -4,6 +4,10 @@
     color: #f7d305;
   }
 
+  header {
+    background-color: #111;
+  }
+
   .line {
     background-color: #f7d305;
   }
@@ -23,9 +27,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  html {
     background-color: white;
     color: #333;
+  }
+
+  header {
+    background-color: white;
   }
 
   .line {
@@ -40,6 +48,14 @@
   }
 }
 @media only screen and (min-width: 0px) {
+  header {
+    height: 9%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
   .content-container {
     padding: 10px;
     display: flex;
@@ -183,6 +199,7 @@
     align-items: center;
     padding-top: 6px;
     cursor: pointer;
+    margin: 10px;
   }
 
   .line {
