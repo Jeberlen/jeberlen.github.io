@@ -24,6 +24,14 @@
   .name-container__photo__img {
     border: #f7d305 2px solid;
   }
+
+  .logo__img {
+    filter: grayscale(1);
+  }
+  .logo__img.visionite {
+    filter: grayscale(0);
+    filter: hue-rotate(185deg);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,6 +62,17 @@
     top: 0;
     right: 0;
     width: 100%;
+  }
+
+  .logo {
+    height: 100%;
+    float: left;
+  }
+
+  .logo__img {
+    height: 95%;
+    margin-left: 8px;
+    margin-top: 3%;
   }
 
   .content-container {
