@@ -26,11 +26,8 @@
   }
 
   .logo__img {
-    filter: grayscale(1);
-  }
-  .logo__img.visionite {
-    filter: grayscale(0);
-    filter: hue-rotate(185deg);
+    filter: invert(77%) sepia(86%) saturate(3555%) hue-rotate(13deg)
+      brightness(112%) contrast(108%);
   }
 }
 
